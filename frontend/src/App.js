@@ -13,8 +13,8 @@ class App extends Component {
                  <Routes> 
                     <Route path= '/login' name='Login' element= {<Login />} />
                     <Route path= '/signup' name='Signup' element= {<Signup />}/>
+                    <Route path="/home" element={<ProtectedRoute element={<Home />} />} />
                 </Routes>
-                <ProtectedRoute path="/home" element={<Home />} />
                  </BrowserRouter>
             );
     }

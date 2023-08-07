@@ -18,7 +18,7 @@ const Home = () => {
         localStorage.removeItem('token');
         navigate('/login');
     }
-      const theme = useTheme();
+    const theme = useTheme();
    
     const isMatch = useMediaQuery(theme.breakpoints.down("md"));
     return ( 
